@@ -4,7 +4,10 @@
       <ion-row color="primary" justify-content-center>
         <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
           <div text-center>
-            <h3>Accede</h3>
+            <h1><font size=60px>FINIXER</font></h1>
+            <div class="ion-text-center">
+            <h3>Acceder</h3>
+          </div>
           </div>
           <div padding>
             <ion-item>
@@ -15,15 +18,15 @@
             </ion-item>
           </div>
           <div padding>
-            <ion-button size="large" type="submit" [disabled]="form.invalid" expand="block">Login</ion-button>
+            <ion-button size="large" shape="round"type="submit" [disabled]="form.invalid" expand="block">Login</ion-button>
           </div>
         </ion-col>
       </ion-row>
     </ion-grid>
   </form>
   <ion-row>
-    <div text-center>
-        <h4><small>. si no tienes cuenta, por favor <a routerLink='/registrar'>registrate aqui</a></small> </h4>      
+    <div class="ion-text-center">
+        <h4>Si no tienes cuenta, por favor <a routerLink='/registrar'>registrate aqui</a></h4>      
     </div>
 </ion-row>
 </ion-content>
