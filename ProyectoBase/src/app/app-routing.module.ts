@@ -8,7 +8,8 @@ const routes: Routes = [
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   { path: 'registrar', component: RegistrarPage },
-  { path: 'login', loadChildren: './auth/login/login.module#LoginPageModule' }
+  { path: 'login', loadChildren: './auth/login/login.module#LoginPageModule' },  { path: 'registro', loadChildren: './auth/registro/registro.module#RegistroPageModule' }
+
 
 ];
 @NgModule({

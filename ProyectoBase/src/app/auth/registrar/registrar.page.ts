@@ -16,14 +16,16 @@ export class RegistrarPage implements OnInit {
   submited=false;
   usuario: Usuario;
 
-  constructor(private formBuilder: FormBuilder, private registrarService: RegistrarService, private alertController: AlertController,
+  constructor(private formBuilder: FormBuilder,
+    private registrarService: RegistrarService,
+    private alertController: AlertController,
     private router: Router)
    {    
      this.registrarForm= this.formBuilder.group({
-       name: ['',Validators.required],
-       email: ['',[Validators.required,Validators.email]],
-       password: ['',[Validators.required,Validators.minLength(6)]],
-       confirm: ['',Validators.required]
+      nombre: ['', Validators.required],
+      correo: ['', [Validators.required, Validators.email]],
+      contrasena: ['', [Validators.required, Validators.minLength(6)]],
+      confirmacionContrasena: ['', Validators.required]
      });
    }
 
@@ -32,7 +34,7 @@ export class RegistrarPage implements OnInit {
   get f(){return this.registrarForm.controls;}
   
 
-  refgistrar(){
+  registrar() {
     console.log(this.registrarForm.valid);
     this.usuario = new Usuario();
     this.usuario.nombre = this.registrarForm.controls.nombre.value;
