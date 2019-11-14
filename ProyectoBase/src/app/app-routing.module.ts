@@ -14,7 +14,10 @@ const routes: Routes = [
   { path: 'login', component: LoginPage },
   { path: 'home', loadChildren: './home/home.module#HomePageModule' },
   { path: 'home', loadChildren: './home/home.module#HomePageModule' },
-  { path: 'cuenta', loadChildren: './cuenta/cuenta.module#CuentaPageModule' },
+  { path: 'cuenta', loadChildren: './cuenta/cuenta.module#CuentaPageModule' },  { path: 'modal-mov', loadChildren: './modal-mov/modal-mov.module#ModalMovPageModule' },
+  { path: 'movimientos', loadChildren: './movimientos/movimientos.module#MovimientosPageModule' },
+  { path: 'resumen', loadChildren: './resumen/resumen.module#ResumenPageModule' },
+
   /*{ path: 'modal-page', loadChildren: './modal-page/modal-page.module#ModalPagePageModule' }*/
 
 ];
